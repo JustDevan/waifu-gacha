@@ -16,10 +16,16 @@ function ambilGambar(url, success) {
 }
 
 getGenerateButton.addEventListener('click', function() {
-    console.log('ditekan!')
-    getImageCard.innerHTML = '';
-    ambilGambar('https://api.waifu.pics/sfw/waifu', results => {
-        const gambar = JSON.parse(results);
-        getImageCard.innerHTML = `<img class="waifu-pic" src=${gambar.url}>`;
-    });
-});
+    // console.log('ditekan!')
+    // getImageCard.innerHTML = '';
+    // ambilGambar('https://api.waifu.pics/sfw/waifu', results => {
+    //     const gambar = JSON.parse(results);
+    //     getImageCard.innerHTML = `<img class="waifu-pic" src=${gambar.url}>`;
+    // });
+    getImageCard.innerHTML = ''
+    fetch('https://api.waifu.pics/sfw/waifu')
+        .then(response => response.json())
+        .then(response => {
+            getImageCard.innerHTML = `<img class="waifu-pic" src=${response.url}`
+        })
+})
