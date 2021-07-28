@@ -6,6 +6,8 @@ getGenerateButton.addEventListener('click', function() {
     fetch('https://api.waifu.pics/sfw/waifu')
         .then(response => response.json())
         .then(response => {
-            getImageCard.innerHTML = `<img class="waifu-pic" src=${response.url}`
+            getImageCard.innerHTML = `<a href="${response.url}" download="waifu">
+                <img class="waifu-pic" src=${response.url}>
+            </a>`
         })
 })
