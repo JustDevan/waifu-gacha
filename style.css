@@ -17,6 +17,7 @@ body {
 }
 
 .card {
+    background-color: red;
     width: 500px;
     display: flex;
     flex-direction: column;
