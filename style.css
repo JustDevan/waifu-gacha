@@ -1,6 +1,12 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  color: #219EBC;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #8ECAE6;
 }
 
 .main {
@@ -11,33 +17,49 @@ body {
 }
 
 .container {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card {
-    background-color: red;
-    width: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #023047;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.sub-menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.sub-menu h1 {
+  font-weight: 600;
 }
 
 .waifu-pic {
-    width: 70%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
-    border: 3px solid gray;
-    box-sizing: border-box;
 }
 
 button.generate {
-    background-color: midnightblue;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 14px;
+    background-color: rgba(0,0,0,0);
+    color: #219EBC;
+    border: 3px solid #219EBC;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
     cursor: pointer;
 }
