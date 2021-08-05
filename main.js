@@ -28,7 +28,7 @@ fetch('https://api.waifu.pics/sfw/waifu')
                            <img class="waifu-pic" src=${response.url}>
                        </a>
                        <div class="sub-menu">
-                           <h1>Waifu Gacha 2.0</h1>
+                           <h3>Waifu Gacha 2.0</h3>
                            <button class="generate">Generate</button>
                        </div>
                        </div>`
